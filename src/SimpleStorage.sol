@@ -8,6 +8,9 @@ contract SimpleStorage {
         string name;
     }
     Person[] public listOfPerson;
+    function  getListOfPerson(uint index)public view returns (Person memory) {
+        return listOfPerson[index];
+    }
     mapping(string => uint) public nameToFavoriteNumber;
     constructor() {
         FavoriteNumber=0;
@@ -23,3 +26,5 @@ contract SimpleStorage {
         nameToFavoriteNumber[_name]=_favNumber;
     }
 }
+// forge script script/DeploySimpleStorage.s.sol --rpc-url $RPC_URL --broadcast --private-key $PRIVATE_KEY
+// 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9

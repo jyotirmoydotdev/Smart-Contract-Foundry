@@ -31,4 +31,4 @@
 - `cast --help`  Show help
 - `cast --to-base HEX-VALUE dec` Convert a hex value to decimal
 - `cast send CONTRACT-ADDRESS "FUNCATION-NAME(ARG1, ARG2, ...) --rpc-url $RPC_URL --private-key $PRIVATE-KEY"`  Send a transaction to a contract
-- `cast call CONTRACT-ADDRESS "FUNCATION-NAME(ARG1, ARG2, ...)"`  Call a function on a contract
+- `cast call CONTRACT-ADDRESS "FUNCATION-NAME(ARG1, ARG2, ...)"`  Call a function on a contract 
